@@ -2,6 +2,11 @@
   "name": "ether-simple-storage",
   "packageManager": "yarn@4.9.2",
   "dependencies": {
-    "solc": "0.8.7"
+    "ethers": "^6.16.0",
+    "fs-extra": "^11.3.3",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
   }
 }
